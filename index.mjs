@@ -5,20 +5,21 @@ async function intraRoute(start, end, options = {
     type: 'json',
     useCors: true
 }) {
-    let url = `https://api.felineholdings.com/intraroute?start=${start}&end=${end}&type=${options.returnType}`;
-    if (options.useCors) {
-        url = `https://cors.felineholdings.com/?${url}`;
+    try {
+        let url = `https://api.felineholdings.com/intraroute?start=${start}&end=${end}&type=${options.returnType}`;
+        if (options.useCors) {
+            url = `https://cors.felineholdings.com/?${url}`;
+        }
+    
+        let response = await axios.post(url, {
+            excludeModes: options.excludeModes
+        })
+
+        return response;
+    } catch (error) {
+        console.error(error);
+        return(error);
     }
-
-    let response = await axios.post(url, {
-        excludeModes: options.excludeModes
-    })
-
-    return response;
 }
-
-intraRoute('airATC', 'omegaKIT', {
-    useCors: false
-});
 
 export default intraRoute;

@@ -65,7 +65,8 @@ Example:
         type: 'simple-json',    // Will return a simple JSON response.
         useCors: false       // Will not proxy the request via a CORS proxy.
     })
+    .then(response => console.log(response));
 
-# Find any issues?
+## Find any issues?
 
 If you find a bug or any other issues, please email us at intra@felineholdings.com.
