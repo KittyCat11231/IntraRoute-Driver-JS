@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KittyCat11231/Helper-Functions.git"
+    "url": "git+https://github.com/KittyCat11231/IntraRoute-Driver-JS.git"
   },
   "author": "kyle11231",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KittyCat11231/Helper-Functions/issues"
+    "url": "https://github.com/KittyCat11231/IntraRoute-Driver-JS/issues"
   },
-  "homepage": "https://github.com/KittyCat11231/Helper-Functions#readme",
+  "homepage": "https://github.com/KittyCat11231/IntraRoute-Driver-JS#readme",
   "dependencies": {
     "axios": "^1.7.7"
   }
