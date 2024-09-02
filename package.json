@@ -1,6 +1,6 @@
 {
   "name": "@kyle11231/intraroute",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A driver for the IntraRoute API for JavaScript.",
   "exports": {
     ".": {
