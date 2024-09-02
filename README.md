@@ -61,9 +61,9 @@ The third parameter is a config object with the following optional parameters:
 Example:
 
     intraRoute('airSSI', 'railCCW', {
-        excludeModes: ['sail'], // Will exclude IntraSail routes in the search.
-        type: 'simple-json', // Will return a simple JSON response.
-        useCors: false // Will not proxy the request via a CORS proxy.
+        excludeModes: ['sail'],     // Will exclude IntraSail routes in the search.
+        type: 'simple-json',    // Will return a simple JSON response.
+        useCors: false       // Will not proxy the request via a CORS proxy.
     })
 
 # Find any issues?
