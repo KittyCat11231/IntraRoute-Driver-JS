@@ -15,7 +15,7 @@ async function intraRoute(start, end, options = {
             excludeModes: options.excludeModes
         })
 
-        return response;
+        return response.data;
     } catch (error) {
         console.error(error);
         return(error);
