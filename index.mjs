@@ -8,7 +8,7 @@ const intraRoute = {
     }) => {
         try {
             let url = `https://api.felineholdings.com/intraroute?start=${start}&end=${end}&type=${options.returnType}`;
-            if (options.useCors) {
+            if (options.useCors || options.useCors === undefined) {
                 url = `https://cors.felineholdings.com/?${url}`;
             }
         
@@ -28,7 +28,7 @@ const intraRoute = {
     }) => {
         try {
             let url = `https://api.felineholdings.com/intraroute/stops-list`;
-            if (options.useCors) {
+            if (options.useCors || options.useCors === undefined) {
                 url = `https://cors.felineholdings.com/?${url}`;
             }
         
